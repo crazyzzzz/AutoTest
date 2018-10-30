@@ -1,0 +1,33 @@
+ [
+	{
+		"description": "这是一个没有参数的post请求",
+		"request": {
+			"uri": "/demoPost",
+			"method": "post"
+		},
+		"response": {
+			"text": "这是一个没有参数的post请求",
+			"headers": {
+				"Content-Type": "text/html;charset=gbk"
+			}
+		}
+	},
+	{
+		"description": "这是一个有参数的post请求",
+		"request": {
+			"uri": "/demoPostWithParams",
+			"method": "post",
+			"forms":{
+			"name":"huhanshan",
+			"sex":"man"
+			}
+			
+		},
+		"response": {
+			"text": "我胡汉山回来了",
+			"headers": {
+				"Content-Type": "text/html;charset=gbk"
+			}
+		}
+	}
+] 

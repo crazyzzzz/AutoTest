@@ -1,0 +1,23 @@
+ [
+	{
+		"description": "这是一个带有cookies信息的post请求",
+		"request": {
+			"uri": "/demoPostWithCookies",
+			"method": "post",
+			"cookies": {
+				"login": "true"
+			},
+			"json": {
+				"name": "huhanshan",
+				"age": "18"
+			}
+		},
+		"response": {
+			"status": 200,
+			"json": {
+				"huhanshan":"success",
+				"status":"1"
+			}
+		}
+	}
+]
