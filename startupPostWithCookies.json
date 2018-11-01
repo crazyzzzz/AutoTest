@@ -1,5 +1,21 @@
  [
 	{
+		"description": "返回cookies信息成功",
+		"request": {
+			"uri": "/getCookies",
+			"method": "get"
+		},
+		"response": {
+			"cookies": {
+				"login": "true"
+			},
+			"text": "这是一个带有cookies信息的get请求",
+			"headers": {
+				"Content-Type": "text/html;charset=gbk"
+			}
+		}
+	},
+	{
 		"description": "这是一个带有cookies信息的post请求",
 		"request": {
 			"uri": "/demoPostWithCookies",
@@ -10,13 +26,16 @@
 			"json": {
 				"name": "huhanshan",
 				"age": "18"
+			},
+			"headers": {
+				"content-type": "application/json"
 			}
 		},
 		"response": {
 			"status": 200,
 			"json": {
-				"huhanshan":"success",
-				"status":"1"
+				"huhanshan": "success",
+				"status": "1"
 			}
 		}
 	}
